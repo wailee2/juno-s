@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - UrbanSteps</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">Juno's</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <img src="./iconx/hamburger.svg" alt="">
+                </div>
+                <div id="menuOverlay" class="menu-overlay">
+                    <div class="nav-overlay-head">
+                        <div class="logo"><span>Juno's</span></div>
+                        <div>
+                            <a href="javascript:void(0)" class="close-btn">
+                                <img src="./iconx/close-big.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overlay-content">
+                        <a href="index.html"><span>Home</span></a>
+                        <a href="products.html"><span>Shop</span></a>
+                        <a href="about.html"><span>About</span></a>
+                        <a href="contact.html"><span>Contact</span></a>
+                        <div class="borderline"></div>
+                        <div class="social-list">
+                            <a href=""><img src="./icon/whatsapp.svg" alt=""></i></a>
+                            <a href=""><i class="fas fa-whatsapp"></i></a>
+                            <a href=""><i class="fas fa-twitter"></i></a>
+                            <a href=""><i class="fas fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search products..." id="searchInput">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="products-page">
+        <div class="container">
+            <div class="product-filters">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="boot boots">Boots</option>
+                        <option value="balls ball">Balls</option>
+                        <option value="clothing">Clothing</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price">
+                        <option value="all">All Prices</option>
+                        <option value="0-10000">Under ₦10,000</option>
+                        <option value="10000-20000">₦10,000 - ₦20,000</option>
+                        <option value="20000-50000">₦20,000 - ₦50,000</option>
+                        <option value="50000+">Over ₦50,000</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="all">All Sizes</option>
+                        <option value="41-45">41-45</option>
+                        <option value="s">Small (S)</option>
+                        <option value="m">Medium (M)</option>
+                        <option value="l">Large (L)</option>
+                        <option value="xl">X-Large (XL)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="no-results" style="display: none;">
+                <p>No products match your search. Try different filters.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Shoe Products -->
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="53000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-02-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-02-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator</h4>
+                                    <span>₦53,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦53,000</span>
+                        <p class="desc-name">Adidas predator</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-03-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-03-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator Elite fold-over tongue size</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator Elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-04-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-04-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator Elite fold-over tongue size</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator Elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="50000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-05-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-05-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator series</h4>
+                                    <span>₦50,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦50,000</span>
+                        <p class="desc-name">Adidas predator series</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-06-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-06-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator Elite fold-over tongue size</h4>
+                                    <span>₦60,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator Elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="60000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-07-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-07-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator Elite fold-over tongue size</h4>
+                                    <span>₦60,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦60,000</span>
+                        <p class="desc-name">Adidas predator Elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-08-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-08-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-09-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-09-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator Elite fold-over tongue size</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator Elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-10-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-10-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Jude Bellingham Limited edition Adidas predator Elite fold-over tongue size</h4>
+                                    <span>₦60,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦60,000</span>
+                        <p class="desc-name">Jude Bellingham Limited edition Adidas predator Elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-11-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-11-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-12-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-12-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-13-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-13-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator Elite fold-over tongue size</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator Elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-14-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-14-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">Adidas predator</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="63000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-15-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-15-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator</h4>
+                                    <span>₦63,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦63,000</span>
+                        <p class="desc-name">Adidas predator</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="65000" data-sizes="41-45">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-16-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-16-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas predator elite fold-over tongue size</h4>
+                                    <span>₦65,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦65,000</span>
+                        <p class="desc-name">Adidas predator elite fold-over tongue size</p>
+                        <p class="sizes">Sizes: 41-45</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-17-nike.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-17-nike.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Nike Tiempo</h4>
+                                    <span>₦45,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦45,000</span>
+                        <p class="desc-name">Nike Tiempo</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-18-nike.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-18-nike.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Nike Tiempo</h4>
+                                    <span>₦45,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦45,000</span>
+                        <p class="desc-name">Nike Tiempo</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-19-nike.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-19-nike.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Nike Tiempo</h4>
+                                    <span>₦45,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦45,000</span>
+                        <p class="desc-name">Nike Tiempo</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-20-nike.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-20-nike.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Nike Tiempo</h4>
+                                    <span>₦45,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦45,000</span>
+                        <p class="desc-name">Nike Tiempo</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-21-nike.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-21-nike.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Nike Tiempo</h4>
+                                    <span>₦45,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦45,000</span>
+                        <p class="desc-name">Nike Tiempo</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="60000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-22-messi.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-22-messi.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Messi's limited edition F50</h4>
+                                    <span>₦60,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦60,000</span>
+                        <p class="desc-name">Messi's limited edition F50</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="54000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-23-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-23-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas Copa</h4>
+                                    <span>₦54,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦54,000</span>
+                        <p class="desc-name">Adidas Copa</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="54000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-24-adidas.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-24-adidas.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>Adidas Copa</h4>
+                                    <span>₦54,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦54,000</span>
+                        <p class="desc-name">Adidas Copa</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-25-f50.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-25-f50.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>F50 league laceless</h4>
+                                    <span>₦55,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦55,000</span>
+                        <p class="desc-name">F50 league laceless</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots shoe shoes" data-price="50000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-26-f50.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-26-f50.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>F50 league turf</h4>
+                                    <span>₦50,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦50,000</span>
+                        <p class="desc-name">F50 league turf</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots shoe shoes" data-price="50000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-27-f50.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-27-f50.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>F50 league turf</h4>
+                                    <span>₦50,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦50,000</span>
+                        <p class="desc-name">F50 league turf</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boot boots shoe shoes" data-price="50000" data-sizes="">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-28-f50.jpg" alt="boots" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="div2 overlay">
+                            <div class="div2-content">
+                                <div class="div2-image">
+                                    <img src="./images/products/boots/boot-28-f50.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="div2-text">
+                                    <h4>F50 league turf</h4>
+                                    <span>₦50,000</span>
+                                    <p>
+                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    </p>
+                                </div>
+                                <button class="closeBtn" style="margin-top: 10px;">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦50,000</span>
+                        <p class="desc-name">F50 league turf</p>
+                    </div>
+                </div>
+                
+                <!-- Clothing Products -->
+                <div class="product-card" data-category="clothing" data-price="8500" data-sizes="s,m,l,xl">
+                    <img src="images/shirt1.jpg" alt="Casual Fit Shirt">
+                    <h3>Casual Fit Shirt</h3>
+                    <p class="price">₦8,500</p>
+                    <p class="sizes">Sizes: S, M, L, XL</p>
+                    <a href="product-detail.html" class="btn">View Details</a>
+                </div>
+                
+                <div class="product-card" data-category="clothing" data-price="12000" data-sizes="m,l">
+                    <img src="images/shirt2.jpg" alt="Formal Dress Shirt">
+                    <h3>Formal Dress Shirt</h3>
+                    <p class="price">₦12,000</p>
+                    <p class="sizes">Sizes: M, L</p>
+                    <a href="product-detail.html" class="btn">View Details</a>
+                </div>
+                
+                <div class="product-card" data-category="clothing" data-price="6500" data-sizes="s,m,l,xl">
+                    <img src="images/shirt3.jpg" alt="Basic T-Shirt">
+                    <h3>Basic T-Shirt</h3>
+                    <p class="price">₦6,500</p>
+                    <p class="sizes">Sizes: S, M, L, XL</p>
+                    <a href="product-detail.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Brands</h4>
+                    <ul>
+                        <li><p>Nike</p></li>
+                        <li><p>Adiddas</p></li>
+                        <li><p>Fila</p></li>
+                        <li><p>Hero</p></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Information</h4>
+                    <p>Any questions? Let us know in</p>
+                    <a href="tel:+234 708 949 4760"><i class="fas fa-phone"></i> +234 708 949 4760</p>
+                    <a href="mailto:aigbejude2426@gmail.com"><i class="fas fa-envelope"></i> aigbejude2426@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/2347089494760"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Juno. All rights reserved. || Design by <a href="#">Wailee</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    
+    <script>
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryFilter = document.getElementById('category');
+            const priceFilter = document.getElementById('price');
+            const sizeFilter = document.getElementById('size');
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            
+            // Apply filters when any filter changes
+            [categoryFilter, priceFilter, sizeFilter].forEach(filter => {
+                filter.addEventListener('change', applyFilters);
+            });
+            
+            // Search functionality - works on button click and Enter key
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            function performSearch() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                applyFilters();
+                
+                if (searchTerm) {
+                    const productCards = document.querySelectorAll('.product-card');
+                    let hasResults = false;
+                    
+                    productCards.forEach(card => {
+                        if (card.style.display !== 'none') {
+                            const productName = card.querySelector('h3')?.textContent.toLowerCase() || 
+                                              card.querySelector('.desc-name')?.textContent.toLowerCase() || '';
+                            const productCategory = card.getAttribute('data-category');
+                            const productSizes = card.getAttribute('data-sizes');
+                            
+                            // Check if search term matches in name, category, or sizes
+                            if (productName.includes(searchTerm) || 
+                                productCategory.includes(searchTerm) || 
+                                (searchTerm === 'shoe' && productCategory === 'shoes') ||
+                                (searchTerm === 'shirt' && productCategory === 'clothing')) {
+                                card.style.display = 'block';
+                                hasResults = true;
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                    
+                    document.querySelector('.no-results').style.display = hasResults ? 'none' : 'block';
+                }
+            }
+            
+            function applyFilters() {
+                const selectedCategory = categoryFilter.value;
+                const selectedPrice = priceFilter.value;
+                const selectedSize = sizeFilter.value;
+                
+                const productCards = document.querySelectorAll('.product-card');
+                let hasResults = false;
+                
+                productCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    const price = parseInt(card.getAttribute('data-price'));
+                    const sizes = card.getAttribute('data-sizes').split(',');
+                    
+                    // Check category filter
+                    const categoryMatch = selectedCategory === 'all' || category === selectedCategory;
+                    
+                    // Check price filter
+                    let priceMatch = false;
+                    if (selectedPrice === 'all') {
+                        priceMatch = true;
+                    } else if (selectedPrice === '0-10000') {
+                        priceMatch = price <= 10000;
+                    } else if (selectedPrice === '10000-20000') {
+                        priceMatch = price > 10000 && price <= 20000;
+                    } else if (selectedPrice === '20000-50000') {
+                        priceMatch = price > 20000 && price <= 50000;
+                    } else if (selectedPrice === '50000+') {
+                        priceMatch = price > 50000;
+                    }
+                    
+                    // Check size filter
+                    const sizeMatch = selectedSize === 'all' || sizes.includes(selectedSize);
+                    
+                    if (categoryMatch && priceMatch && sizeMatch) {
+                        card.style.display = 'block';
+                        hasResults = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                document.querySelector('.no-results').style.display = hasResults ? 'none' : 'block';
+            }
+    
+            // Initialize overlay functionality
+            // Get all overlay buttons and close buttons
+            const overlayBtns = document.querySelectorAll('.overlayBtn');
+            const closeBtns = document.querySelectorAll('.closeBtn');
+            
+            // Add click event to each overlay button
+            overlayBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Find the overlay div within the same product card
+                    const overlay = this.closest('.product-card').querySelector('.overlay');
+                    overlay.style.display = 'flex';
+                });
+            });
+            
+            // Add click event to each close button
+            closeBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Find the overlay div within the same product card
+                    const overlay = this.closest('.overlay');
+                    overlay.style.display = 'none';
+                });
+            });
+            // Check if there's a search term in the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchTerm = urlParams.get('search');
+            
+            if (searchTerm) {
+                // Apply the search filter
+                const searchInput = document.getElementById('searchInput');
+                if (searchInput) {
+                    searchInput.value = decodeURIComponent(searchTerm);
+                }
+                
+                // Apply the search filter (this function is from main.js)
+                if (typeof filterProducts === 'function') {
+                    filterProducts(decodeURIComponent(searchTerm));
+                }
+            }
+        });
+    </script>
+</body>
+</html>

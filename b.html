@@ -1,0 +1,109 @@
+<div class="products-grid">
+    <!-- Shoe Products -->
+    <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
+        <div class="image">
+            <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-small">
+            <button class="overlayBtn product-btn">Quick View</button>
+            <div class="div2 overlay">
+                <div class="div2-content">
+                    <div class="div2-image">
+                        <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-big" width="100px">
+                    </div>
+                    <div class="div2-text">
+                        <h4>Adidas predator Elite fold-over tongue</h4>
+                        <span>₦55,000</span>
+                        <p>
+                            Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                        </p>
+                    </div>
+                    <button class="closeBtn" style="margin-top: 10px;">
+                        <img src="./iconx/close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="desc">
+            <span class="price">₦55,000</span>
+            <p class="desc-name">Adidas predator Elite fold-over tongue</p>
+            <p class="sizes">Sizes: 41-45</p>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="boot boots" data-price="53000" data-sizes="41-45">
+        <div class="image">
+            <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-small">
+            <button class="overlayBtn product-btn">Quick View</button>
+            <div class="div2 overlay">
+                <div class="div2-content">
+                    <div class="div2-image">
+                        <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-big" width="100px">
+                    </div>
+                    <div class="div2-text">
+                        <h4>Adidas predator</h4>
+                        <span>₦53,000</span>
+                        <p>
+                            Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                        </p>
+                    </div>
+                    <button class="closeBtn" style="margin-top: 10px;">
+                        <img src="./iconx/close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="desc">
+            <span class="price">₦53,000</span>
+            <p class="desc-name">Adidas predator</p>
+            <p class="sizes">Sizes: 41-45</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div2-content {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 800px;
+        width: 90%;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all overlay buttons and close buttons
+        const overlayBtns = document.querySelectorAll('.overlayBtn');
+        const closeBtns = document.querySelectorAll('.closeBtn');
+        
+        // Add click event to each overlay button
+        overlayBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Find the overlay div within the same product card
+                const overlay = this.closest('.product-card').querySelector('.overlay');
+                overlay.style.display = 'flex';
+            });
+        });
+        
+        // Add click event to each close button
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Find the overlay div within the same product card
+                const overlay = this.closest('.overlay');
+                overlay.style.display = 'none';
+            });
+        });
+    });
+</script>
