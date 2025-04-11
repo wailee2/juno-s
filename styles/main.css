@@ -455,26 +455,30 @@ footer {
 /* products.html */
 .products-page{
     .product-filters{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        display: flex;
+        justify-content: space-between;
         gap: 30px;
         margin-top: 2.5rem;
         background-color: var(--secondary-color);
+        border-radius: 20px;
         padding: 30px;
-        label{
+        width: 100%;
+        span{
             font-size: 17px;
             line-height: 1.6;
             font-weight: bold;
         }
         select{
-            padding: 5px;
+            padding: 15px;
+            border-radius: 10px;
             background: none;
-            border-radius: 3px;
+            border-radius: 30px;
             border: 1px solid rgb(151, 151, 151);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             font-size: 16px;
             option{
                 font-size: 16px;
+                text-align: left;
                 background-color: var(--secondary-color);
             }  
         }
@@ -733,6 +737,16 @@ footer {
                     text-decoration: none;
                     color: #595959;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 729px) {
+    .products-page{
+        .product-filters{
+            flex-direction: column;
+            select{
+                width: 100%;
             }
         }
     }

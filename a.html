@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Top Cars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1E3A8A;
+            --secondary: #F97316;
+            --light-gray: #F3F4F6;
+            --dark-gray: #6B7280;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--light-gray);
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary), #3B82F6);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .search-bar {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 12px 20px 12px 45px;
+            border-radius: 30px;
+            border: none;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-bar i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--dark-gray);
+        }
+        
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .select-wrapper {
+            position: relative;
+            min-width: 200px;
+        }
+        
+        .select-wrapper i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--dark-gray);
+        }
+        
+        .select-wrapper select {
+            width: 100%;
+            padding: 10px 15px 10px 35px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            appearance: none;
+            background-color: white;
+        }
+        
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 20px 30px;
+            flex-wrap: wrap;
+        }
+        
+        .category-btn {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: var(--light-gray);
+            border: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .category-btn:hover {
+            background-color: #E5E7EB;
+        }
+        
+        .category-btn.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            .filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .select-wrapper {
+                width: 100%;
+            }
+            
+            .categories {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 20px;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .category-btn {
+                flex-shrink: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Find Top Cars</h1>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Cars...">
+            </div>
+        </div>
+        
+        <div class="filters">
+            <div class="select-wrapper">
+                <i class="fas fa-map-marker-alt"></i>
+                <select>
+                    <option>Select Location</option>
+                    <option>New York</option>
+                    <option>Los Angeles</option>
+                    <option>Chicago</option>
+                </select>
+            </div>
+            
+            <div class="select-wrapper">
+                <i class="fas fa-car"></i>
+                <select>
+                    <option>Select Category</option>
+                    <option>Sedan</option>
+                    <option>SUV/Jeep</option>
+                    <option>Minivan</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="categories">
+            <button class="category-btn active">
+                <i class="fas fa-car-side"></i>
+                Sedan
+            </button>
+            <button class="category-btn">
+                <i class="fas fa-truck"></i>
+                SUV / Jeep
+            </button>
+            <button class="category-btn">
+                <i class="fas fa-van-shuttle"></i>
+                Minivan
+            </button>
+            <button class="category-btn">
+                <i class="fas fa-wagon"></i>
+                Wagon
+            </button>
+            <button class="category-btn">
+                <i class="fas fa-car-alt"></i>
+                Coupe
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        // Simple active state toggle for category buttons
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
