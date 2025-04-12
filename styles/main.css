@@ -258,10 +258,12 @@ nav{
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg-02.jpg');
-    height: 120vh;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg-06.jpg');
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -394,20 +396,36 @@ nav{
 
 /* Footer */
 footer {
-    background-color: var(--dark-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/footer-bg-01.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     padding: 30px 0 10px 0;
+    .container{
+        padding-top: 70vh;
+        position: relative;
+    }
+    .juno{
+        position: absolute;
+        letter-spacing: -12px;
+        bottom: 0;
+        right: 0;
+        color: rgba(255, 255, 255, 0.747);
+        font-size: 9.5rem;
+        padding: 0;
+    }
     .footer-grid {
         gap: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
         .footer-col{
             h4 {
                 margin-bottom: 10px;
                 color: white;
                 font-size: 15px;
-            }
-            p{
-                font-size: 13px;
-                line-height: 1.5rem;
             }
             a {
                 color: white;
@@ -416,23 +434,9 @@ footer {
             .info{
                 display: flex;
             }
-            /*
-            ul {
-                list-style: none;
-                li {
-                    margin-bottom: 10px;
-                    a {
-                        color: #ddd;
-                        transition: color 0.3s;
-                    }
-                    a:hover {
-                        color: white;
-                    }
-                }
-            }*/
             .social-links {
                 display: flex;
-                gap: 15px;
+                gap: 20px;
                 a {
                     color: white;
                     font-size: 1.2rem;
@@ -445,11 +449,14 @@ footer {
         }
     }
     .copyright {
-        text-align: center;
+        text-align: left;
         padding-top: 10px;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         color: #aaa;
         font-size: 0.9rem;
+        a{
+            color: white;
+        }
     }
 }
 
