@@ -11,24 +11,22 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html">Juno's</a></div>
+            <div class="logo"><a href="index.html">Junos</a></div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="products.html">Shop</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="menu-btn">
-                    <img src="./iconx/hamburger.svg" alt="">
-                </div>
+                
                 <div id="menuOverlay" class="menu-overlay">
                     <div class="nav-overlay-head">
-                        <div class="logo"><span>Juno's</span></div>
+                        <div class="logo"><a href="index.html">Junos</a></div>
                         <div>
                             <a href="javascript:void(0)" class="close-btn">
-                                <img src="./iconx/close-big.svg" alt="">
-                            </a>
+                            <img src="./iconx/close-big.svg" alt="">
+                            </i></a>
                         </div>
                     </div>
                     <div class="overlay-content">
@@ -49,9 +47,12 @@
                 </div>
             </nav>
             <div class="search-box">
-                <input type="text" placeholder="Search products..." id="searchInput">
-                <button id="searchButton"><i class="fas fa-search"></i></button>
+                <div class="search-box-inner">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
             </div>
+            <div class="menu-btn"><span>Menu</span></div>
         </div>
     </header>
 

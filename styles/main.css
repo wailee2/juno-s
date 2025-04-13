@@ -50,8 +50,9 @@ a {
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgb(255, 255, 255);
     transform: translateY(-2px);
+    color: black;
 }
 
 .btn-outline {
@@ -105,14 +106,31 @@ nav{
         background-color: rgb(117, 117, 117);
         overflow-x: hidden;
         transition: 0.5s;
+        .nav-overlay-head{
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            .nav-overlay-head-content{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
         .close-btn {
             color: black;
             width: 68px;
             cursor: pointer;
             text-decoration: none;
-            position: absolute;
-            right: 0;
-            top: 15px;
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+            padding: 6px 10px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 30px;
+            transition: all 0.9s ease;
+        }
+        .close-btn {
+            border: 1px solid rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            color: black;
         }
         .overlay-content {
             position: relative;
@@ -168,7 +186,6 @@ nav{
         padding: 10px 15px;
         border-radius: 30px;
         list-style: none;
-        
         gap: 40px;
         li{
             a{
@@ -188,7 +205,21 @@ nav{
         }
     }
 }
-
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    padding: 6px 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    transition: all 0.9s ease;
+}
+.menu-btn:hover{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
 .search-box {
     background-color: rgba(130, 136, 130, 0.281);
     border: 1px solid rgba(255, 255, 255, 0.39);
@@ -229,19 +260,7 @@ nav{
     font-size: 13px;
 }
 
-.menu-btn {
-    display: none;
-    cursor: pointer;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.575);
-    padding: 6px 10px;
-    background-color: rgba(130, 136, 130, 0.116);
-    border: 1px solid rgba(255, 255, 255, 0.171);
-    border-radius: 30px;
-}
-.menu-btn:hover{
-    background-color: rgba(130, 136, 130, 0.603);
-}
+
 
 /* Hero Section */
 .hero {
@@ -512,10 +531,9 @@ footer {
     padding-top: 7.5rem ;
     .product-filters{
         display: flex;
-        
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
         border-radius: 20px;
         select{
             padding: 15px 10px;
@@ -609,6 +627,7 @@ footer {
                     }
                     
                     .overlay-text{
+                        text-transform: capitalize;
                         h2{
                             font-size: 24px;
                             color: var(--dark-color);
@@ -651,7 +670,7 @@ footer {
                 .product-btn{
                     background-color: var(--primary-color);
                     transform: translateY(-20px);
-                    font-size: 100%;
+                    font-size: 14px;
                 }
                 .product-btn:hover{
                     color: var(--primary-color);
@@ -664,6 +683,7 @@ footer {
                 .desc-name{
                     font-weight: bold;
                     font-size: 20px;
+                    
                 }
                 .price{
                     font-size: 17px;
