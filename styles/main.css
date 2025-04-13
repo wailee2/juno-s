@@ -109,7 +109,7 @@ nav{
         .nav-overlay-head{
             display: flex;
             justify-content: space-between;
-            width: 100%; padding: 15px 1rem;
+            width: 100%; padding: 15px 1.5rem;
             .nav-overlay-head-content{
                 display: flex;
                 justify-content: space-between;
