@@ -108,7 +108,7 @@ nav{
         transition: 0.5s;
         .nav-overlay-head{
             display: flex;
-            justify-content: center;
+            justify-contfent: center;
             width: 95%;
             .nav-overlay-head-content{
                 display: flex;
