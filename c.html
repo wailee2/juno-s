@@ -1,0 +1,109 @@
+Here’s a simple HTML + CSS style guide layout combining your color scheme and font scheme into a visual reference you can use or build upon:
+
+
+---
+
+HTML + CSS Style Guide Template
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0057A0;
+      --secondary-color: #FF6B00;
+      --accent-color: #A2D729;
+      --bg-color: #F5F5F5;
+      --text-color: #333333;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .accent {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .color-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .color {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0.5rem;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .primary { background-color: var(--primary-color); }
+    .secondary { background-color: var(--secondary-color); }
+    .accent-color { background-color: var(--accent-color); color: #000; }
+    .bg { background-color: var(--bg-color); color: #000; }
+    .text { background-color: var(--text-color); }
+
+    .sample {
+      margin-top: 2rem;
+    }
+
+    .label {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Style Guide</h1>
+
+  <h2>Color Palette</h2>
+  <div class="color-box">
+    <div class="color primary">Primary<br>#0057A0</div>
+    <div class="color secondary">Secondary<br>#FF6B00</div>
+    <div class="color accent-color">Accent<br>#A2D729</div>
+    <div class="color bg">Background<br>#F5F5F5</div>
+    <div class="color text">Text<br>#333333</div>
+  </div>
+
+  <div class="sample">
+    <h2>Font Samples</h2>
+    <h3>Heading - Montserrat Bold</h3>
+    <p style="font-family: 'Open Sans', sans-serif;">Body text - Open Sans Regular. This is how your descriptions will look on the site.</p>
+    <p class="label">Price Tag / Label - Poppins Light</p>
+  </div>
+
+</body>
+</html>
+
+
+---
+
+You can save this as style-guide.html and open it in your browser to preview your brand look. Want a version with sample product cards too?
+

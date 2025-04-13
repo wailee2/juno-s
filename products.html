@@ -23,14 +23,9 @@
                     <img src="./iconx/hamburger.svg" alt="">
                 </div>
                 <div id="menuOverlay" class="menu-overlay">
-                    <div class="nav-overlay-head">
-                        <div class="logo"><span>Juno's</span></div>
-                        <div>
-                            <a href="javascript:void(0)" class="close-btn">
-                                <img src="./iconx/close-big.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                    <a href="javascript:void(0)" class="close-btn">
+                        <img src="./iconx/close-big.svg" alt="">
+                    </a>
                     <div class="overlay-content">
                         <a href="index.html"><span>Home</span></a>
                         <a href="products.html"><span>Shop</span></a>
@@ -99,16 +94,16 @@
                     <div class="image">
                         <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-small">
                         <button class="overlayBtn product-btn">Quick View</button>
-                        <div class="div2 overlay">
-                            <div class="div2-content">
-                                <div class="div2-image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
                                     <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-big">
                                 </div>
-                                <div class="div2-text">
+                                <div class="overlay-text">
                                     <h4>Adidas predator</h4>
                                     <span>₦55,000</span>
-                                    <p>
-                                        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                    <p class="desc-name">
+                                        Pink | Lemon | White
                                     </p>
                                 </div>
                                 <button class="closeBtn" style="margin-top: 10px;">
@@ -120,7 +115,6 @@
                     <div class="desc">
                         <span class="price">₦55,000</span>
                         <p class="desc-name">Adidas predator</p>
-                        <p class="sizes">Sizes: 41-45</p>
                     </div>
                 </div>
 
@@ -1040,7 +1034,7 @@
                     
                     productCards.forEach(card => {
                         if (card.style.display !== 'none') {
-                            const productName = card.querySelector('h3')?.textContent.toLowerCase() || 
+                            const productName = card.querySelector('h4')?.textContent.toLowerCase() || 
                                               card.querySelector('.desc-name')?.textContent.toLowerCase() || '';
                             const productCategory = card.getAttribute('data-category');
                             const productSizes = card.getAttribute('data-sizes');
