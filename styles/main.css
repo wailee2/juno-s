@@ -458,12 +458,9 @@ footer {
             color: #333333;
             font-size: 0.9rem;
         }
-        .wailee{
+        p{
             color: #333333;
             font-size: 0.9rem;
-            span{
-                color: white;
-            }
         }
         .social-links {
             display: flex;
