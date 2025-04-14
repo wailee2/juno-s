@@ -109,8 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         searchTerm = searchTerm.toLowerCase();
         
         productCards.forEach(card => {
-            const productName = card.querySelector('h3')?.textContent.toLowerCase() || 
-                              card.querySelector('.desc-name')?.textContent.toLowerCase() || '';
+            const productName = card.querySelector('.info')?.textContent.toLowerCase() || "";
             const productCategory = card.getAttribute('data-category');
             const productSizes = card.getAttribute('data-sizes');
             
@@ -130,5 +129,47 @@ document.addEventListener('DOMContentLoaded', function() {
         if (noResultsElement) {
             noResultsElement.style.display = hasResults ? 'none' : 'block';
         }
+    }
+
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.75 &&
+            rect.bottom >= 0
+        );
+    }
+    
+    // Function to handle scroll animations
+    function handleScrollAnimations() {
+        const animatedElements = document.querySelectorAll('.animate-left, .animate-right, .animate-up, .animate-fade');
+        
+        animatedElements.forEach(element => {
+            if (isInViewport(element)) {
+                element.classList.add('active');
+            }
+        });
+    }
+    
+    // Initial check on load
+    handleScrollAnimations();
+    
+    // Check on scroll
+    window.addEventListener('scroll', handleScrollAnimations);
+    
+    // Optional: Add intersection observer for better performance
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.animate-left, .animate-right, .animate-up, .animate-fade').forEach(el => {
+            observer.observe(el);
+        });
     }
 });

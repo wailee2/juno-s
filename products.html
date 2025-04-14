@@ -52,24 +52,30 @@
         </div>
     </header>
 
-    <section class="products-page">
+    <section class="products-page animate-up">
         <div class="container">
             <div class="product-filters">
                 <div class="filter-group">
                     <select id="category">
                         <option value="all">All Categories</option>
-                        <option value="boot boots">Boots</option>
-                        <option value="ball balls">Balls</option>
-                        <option value="clothing clothes">Clothing</option>
+                        <option value="balls">Balls</option>
+                        <option value="boots">Boots</option>
+                        <option value="caps">Caps</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="crocs">Crocs</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="shorts">Shorts</option>
+                        <option value="slides">Slides</option>
+                        <option value="socks">Socks</option>
                     </select>
                 </div>
                 
                 <div class="filter-group">
                     <select id="price">
                         <option value="all">All Prices</option>
-                        <option value="0-10000">Under ₦10,000</option>
-                        <option value="10000-20000">₦10,000 - ₦20,000</option>
-                        <option value="20000-50000">₦20,000 - ₦50,000</option>
+                        <option value="0-20000">Under ₦20,000</option>
+                        <option value="20000-30000">₦20,000 - ₦30,000</option>
+                        <option value="30000-50000">₦30,000 - ₦50,000</option>
                         <option value="50000+">Over ₦50,000</option>
                     </select>
                 </div>
@@ -77,13 +83,25 @@
                 <div class="filter-group">
                     <select id="size">
                         <option value="all">All Sizes</option>
-                        <option value="41-45">41-45</option>
                         <option value="s">Small (S)</option>
                         <option value="m">Medium (M)</option>
                         <option value="l">Large (L)</option>
                         <option value="xl">X-Large (XL)</option>
                     </select>
                 </div>
+
+                <!-- Add this with your other filters 
+                <div class="filter-group">
+                    <select id="color">
+                        <option value="all">All Colors</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="multi">Multi-color</option>
+                    </select>
+                </div>-->
             </div>
             
             <div class="no-results" style="display: none;">
@@ -91,8 +109,459 @@
             </div>
             
             <div class="products-grid">
-                <!-- Shoe Products -->
-                 <!-- Shoe 1 -->
+                <div class="product-card" data-category="shoes" data-price="30000" data-sizes="m,l,xl" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shoes/shoe-01.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shoes/shoe-01.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Sneakers </h4>
+                                    <span>₦30,000</span>
+                                    <p>Original sb dunks quality sneakers </p>
+                                    <p>Sizes: 42, 43, 44, 45, 46</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦30,000</span>
+                        <h4 class="debsc-name">Sneakers</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shorts" data-price="20000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shorts/shorts-01.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shorts/shorts-01.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">shorts</h4>
+                                    <span>₦20,000</span>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦20,000</span>
+                        <h4 class="debsc-name">Shorts</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes" data-price="30000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shoes/shoe-03.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shoes/shoe-03.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">shoe</h4>
+                                    <span>₦30,000</span>
+                                    <p>Adidas fear of God(FOG)</p>
+                                    <p>Sizes: 41-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦30,000</span>
+                        <h4 class="debsc-name">Shoe</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes" data-price="40000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shoes/shoe-04.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shoes/shoe-04.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">shoe</h4>
+                                    <span>₦40,000</span>
+                                    <p>Adidas campus</p>
+                                    <p>Sizes: 40-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦40,000</span>
+                        <h4 class="debsc-name">Shoe</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boots" data-price="27000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-01.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/boots/boot-01.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">boot</h4>
+                                    <span>₦27,000</span>
+                                    <p>low grade nike vapour 16</p>
+                                    <p>Sizes: 41-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦27,000</span>
+                        <h4 class="debsc-name">Boot</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes" data-price="40000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shoes/shoe-05.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shoes/shoe-05.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">shoe</h4>
+                                    <span>₦40,000</span>
+                                    <p>Adidas campus</p>
+                                    <p>Sizes: 40-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦40,000</span>
+                        <h4 class="debsc-name">Shoe</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shoes" data-price="32000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shoes/shoe-02.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shoes/shoe-02.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Nike canvas</h4>
+                                    <span>₦32,000</span>
+                                    <p>Sizes: 40-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦32,000</span>
+                        <h4 class="debsc-name">Nike canvasa</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="caps" data-price="15000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/caps/cap-01.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/caps/cap-01.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Snapback</h4>
+                                    <span>₦15,000</span>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦15,000</span>
+                        <h4 class="debsc-name">Snapback</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing" data-price="17000" data-sizes="l,xl" data-colors="multi">
+                    <div class="image">
+                        <img src="./images/products/shirts/shirt-01.jpg" alt="Tracksuit" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shirts/shirt-01.jpg" alt="tracksuit" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Flannel shirt</h4>
+                                    <span>₦17,000</span>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦17,000</span>
+                        <h4 class="debsc-name">Flannel shirt</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="crocs" data-price="18000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shoes/crocs-01.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shoes/crocs-01.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">shoe</h4>
+                                    <span>₦18,000</span>
+                                    <p>original lite crocs</p>
+                                    <p>Sizes: 41-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦18,000</span>
+                        <h4 class="debsc-name">Crocs</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing" data-price="35000" data-sizes="m,l" data-colors="multi">
+                    <div class="image">
+                        <img src="./images/products/tracksuit/tracksuit-01.jpg" alt="Tracksuit" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/tracksuit/tracksuit-01.jpg" alt="tracksuit" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Tracksuit</h4>
+                                    <span>₦35,000</span>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦35,000</span>
+                        <h4 class="debsc-name">Tracksuit</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boots" data-price="27000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-02.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/boots/boot-02.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">boot</h4>
+                                    <span>₦27,000</span>
+                                    <p>low grade nike vapour 16</p>
+                                    <p>Sizes: 41-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦27,000</span>
+                        <h4 class="debsc-name">Boot</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing" data-price="35000" data-sizes="m,l" data-colors="multi">
+                    <div class="image">
+                        <img src="./images/products/tracksuit/tracksuit-02.jpg" alt="Tracksuit" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/tracksuit/tracksuit-02.jpg" alt="tracksuit" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Tracksuit</h4>
+                                    <span>₦35,000</span>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦35,000</span>
+                        <h4 class="debsc-name">Tracksuit</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="slides" data-price="18000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/shoes/slides-01.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/shoes/slides-01.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Luofu Slides</h4>
+                                    <span>₦25,000</span>
+                                    <p>Sizes: 40-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦25,000</span>
+                        <h4 class="debsc-name">Slides</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing" data-price="35000" data-sizes="m,l" data-colors="multi">
+                    <div class="image">
+                        <img src="./images/products/tracksuit/tracksuit-03.jpg" alt="Tracksuit" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/tracksuit/tracksuit-03 -big.jpg" alt="tracksuit" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">Tracksuit</h4>
+                                    <span>₦35,000</span>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦35,000</span>
+                        <h4 class="debsc-name">Tracksuit</h4>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="boots" data-price="27000" data-sizes="s,m,l" data-colors="black,white">
+                    <div class="image">
+                        <img src="./images/products/boots/boot-03.jpg" alt="shoe" class="img-small">
+                        <button class="overlayBtn product-btn">Quick View</button>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-image">
+                                    <img src="./images/products/boots/boot-03.jpg" alt="boots" class="img-big">
+                                </div>
+                                <div class="overlay-text">
+                                    <h4 class="info">boot</h4>
+                                    <span>₦27,000</span>
+                                    <p>low grade nike vapour 16</p>
+                                    <p>Sizes: 41-45</p>
+                                </div>
+                                <button class="closeBtn">
+                                    <img src="./iconx/close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <span class="price">₦27,000</span>
+                        <h4 class="debsc-name">Boot</h4>
+                    </div>
+                </div>
+
+
+                    <!--
+
+
+
+                <div>
+                    <div class="product-card" data-category="shoe shoes" data-price="32000" data-sizes="m,l">
+                        <div class="image">
+                            <img src="./images/products/shoes/shoe-01.jpg" alt="shoe" class="img-small">
+                            <button class="overlayBtn product-btn">Quick View</button>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <div class="overlay-image">
+                                        <img src="./images/products/shoes/shoe-01.jpg" alt="boots" class="img-big">
+                                    </div>
+                                    <div class="overlay-text">
+                                        <h4 class="info">Sneakers </h4>
+                                        <span>₦30,000</span>
+                                        <p class="info2">grey</p>
+                                        <p>Sizes: 41-45</p>
+                                    </div>
+                                    <button class="closeBtn" style="margin-top: 10px;">
+                                        <img src="./iconx/close.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span class="price">₦30,000</span>
+                            <h4 class="debsc-name">Sneakers</h4>
+                        </div>
+                    </div>
+                </div>
+                Shoe Products
+                  Shoe 1
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-01-adidas.jpg" alt="boots" class="img-small">
@@ -116,10 +585,10 @@
                     </div>
                     <div class="desc">
                         <span class="price">₦55,000</span>
-                        <h4 class="desc-name">Adidas predator</h4>
+                        <h4 class="desc-name">Adidas p predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 2 -->
+                 Shoe 2
                 <div class="product-card" data-category="boot boots" data-price="53000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-02-adidas.jpg" alt="boots" class="img-small">
@@ -146,7 +615,7 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 3 -->
+                 Shoe 3
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-03-adidas.jpg" alt="boots" class="img-small">
@@ -173,7 +642,7 @@
                         <h4 class="desc-name">Adidas predator </h4>
                     </div>
                 </div>
-                <!-- Shoe 4 -->
+                
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-04-adidas.jpg" alt="boots" class="img-small">
@@ -200,7 +669,7 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 5 -->
+               
                 <div class="product-card" data-category="boot boots" data-price="50000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-05-adidas.jpg" alt="boots" class="img-small">
@@ -227,7 +696,7 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 6 -->
+             
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-06-adidas.jpg" alt="boots" class="img-small">
@@ -254,7 +723,6 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 7 -->
                 <div class="product-card" data-category="boot boots" data-price="60000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-07-adidas.jpg" alt="boots" class="img-small">
@@ -281,7 +749,6 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 8 -->
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-08-adidas.jpg" alt="boots" class="img-small">
@@ -308,7 +775,6 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 9 -->
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-09-adidas.jpg" alt="boots" class="img-small">
@@ -335,7 +801,7 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 10 -->
+                
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-10-adidas.jpg" alt="boots" class="img-small">
@@ -362,7 +828,7 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 11 -->
+                
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-11-adidas.jpg" alt="boots" class="img-small">
@@ -390,7 +856,7 @@
                         <h4 class="desc-name">Adidas predator</h4>
                     </div>
                 </div>
-                <!-- Shoe 12 -->
+                
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-12-adidas.jpg" alt="boots" class="img-small">
@@ -418,7 +884,7 @@
                         <p class="desc-name">Adidas predator</p>
                     </div>
                 </div>
-                <!-- Shoe 13 -->
+                
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-13-adidas.jpg" alt="boots" class="img-small">
@@ -446,7 +912,7 @@
                         <p class="desc-name">Adidas predator</p>
                     </div>
                 </div>
-                <!-- Shoe 14 -->
+                
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-14-adidas.jpg" alt="boots" class="img-small">
@@ -474,7 +940,7 @@
                         <p class="desc-name">Adidas predator</p>
                     </div>
                 </div>
-                <!-- Shoe 15 -->
+              
                 <div class="product-card" data-category="boot boots" data-price="63000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-15-adidas.jpg" alt="boots" class="img-small">
@@ -502,7 +968,7 @@
                         <p class="desc-name">Adidas predator</p>
                     </div>
                 </div>
-                <!-- Shoe 16 -->
+                
                 <div class="product-card" data-category="boot boots" data-price="65000" data-sizes="41-45">
                     <div class="image">
                         <img src="./images/products/boots/boot-16-adidas.jpg" alt="boots" class="img-small">
@@ -531,7 +997,7 @@
                     </div>
                 </div>
 
-                <!-- Shoe 17 Nike -->
+              
                 <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-17-nike.jpg" alt="boots" class="img-small">
@@ -559,7 +1025,6 @@
                         <p class="desc-name">Nike Tiempo</p>
                     </div>
                 </div>
-                <!-- Shoe 18 -->
                 <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-18-nike.jpg" alt="boots" class="img-small">
@@ -587,7 +1052,6 @@
                         <p class="desc-name">Nike Tiempo</p>
                     </div>
                 </div>
-                <!-- Shoe 19 -->
                 <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-19-nike.jpg" alt="boots" class="img-small">
@@ -615,7 +1079,6 @@
                         <p class="desc-name">Nike Tiempo</p>
                     </div>
                 </div>
-                <!-- Shoe 20 -->
                 <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-20-nike.jpg" alt="boots" class="img-small">
@@ -643,7 +1106,6 @@
                         <p class="desc-name">Nike Tiempo</p>
                     </div>
                 </div>
-                <!-- Shoe 21 -->
                 <div class="product-card" data-category="boot boots" data-price="45000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-21-nike.jpg" alt="boots" class="img-small">
@@ -671,7 +1133,6 @@
                         <p class="desc-name">Nike Tiempo</p>
                     </div>
                 </div>
-                <!-- Shoe 22 -->
                 <div class="product-card" data-category="boot boots" data-price="60000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-22-messi.jpg" alt="boots" class="img-small">
@@ -699,7 +1160,7 @@
                         <p class="desc-name">Messi's edition F50</p>
                     </div>
                 </div>
-                <!-- Shoe 23 -->
+                 
                 <div class="product-card" data-category="boot boots" data-price="54000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-23-adidas.jpg" alt="boots" class="img-small">
@@ -727,7 +1188,6 @@
                         <p class="desc-name">Adidas Copa</p>
                     </div>
                 </div>
-                <!-- Shoe 24 -->
                 <div class="product-card" data-category="boot boots" data-price="54000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-24-adidas.jpg" alt="boots" class="img-small">
@@ -755,7 +1215,6 @@
                         <p class="desc-name">Adidas Copa</p>
                     </div>
                 </div>
-                <!-- Shoe 25 -->
                 <div class="product-card" data-category="boot boots" data-price="55000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-25-f50.jpg" alt="boots" class="img-small">
@@ -783,7 +1242,6 @@
                         <p class="desc-name">F50 league laceless</p>
                     </div>
                 </div>
-                <!-- Shoe 26 -->
                 <div class="product-card" data-category="boot boots shoe shoes" data-price="50000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-26-f50.jpg" alt="boots" class="img-small">
@@ -810,8 +1268,7 @@
                         <span class="price">₦50,000</span>
                         <p class="desc-name">F50 league turf</p>
                     </div>
-                </div>
-                <!-- Shoe 27 -->
+                </div
                 <div class="product-card" data-category="boot boots shoe shoes" data-price="50000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-27-f50.jpg" alt="boots" class="img-small">
@@ -839,7 +1296,6 @@
                         <p class="desc-name">F50 league turf</p>
                     </div>
                 </div>
-                <!-- Shoe 28 -->
                 <div class="product-card" data-category="boot boots shoe shoes" data-price="50000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/boots/boot-28-f50.jpg" alt="boots" class="img-small">
@@ -868,7 +1324,6 @@
                     </div>
                 </div>
                 
-                <!-- Ball Products -->
                 <div class="product-card" data-category="ball balls" data-price="20000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/balls/ball-01-basketball.jpg" alt="ball" class="img-small">
@@ -925,7 +1380,6 @@
                     </div>
                 </div>
 
-                <!-- Clothing Products -->
                 <div class="product-card" data-category="clothing clothes" data-price="20000" data-sizes="">
                     <div class="image">
                         <img src="./images/products/jersey/featured-jersey.png" alt="ball" class="img-small">
@@ -952,7 +1406,7 @@
                         <span class="price">₦20,000</span>
                         <p class="desc-name">Basketball Jersey</p>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -1051,12 +1505,12 @@
                     let priceMatch = false;
                     if (selectedPrice === 'all') {
                         priceMatch = true;
-                    } else if (selectedPrice === '0-10000') {
-                        priceMatch = price <= 10000;
-                    } else if (selectedPrice === '10000-20000') {
-                        priceMatch = price > 10000 && price <= 20000;
-                    } else if (selectedPrice === '20000-50000') {
-                        priceMatch = price > 20000 && price <= 50000;
+                    } else if (selectedPrice === '0-20000') {
+                        priceMatch = price <= 20000;
+                    } else if (selectedPrice === '20000-30000') {
+                        priceMatch = price > 20000 && price <= 30000;
+                    } else if (selectedPrice === '30000-50000') {
+                        priceMatch = price > 30000 && price <= 50000;
                     } else if (selectedPrice === '50000+') {
                         priceMatch = price > 50000;
                     }
@@ -1115,5 +1569,130 @@
             }
         });
     </script>
+
+<!--
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Existing code...
+            
+            // Get all filter elements
+            const categoryFilter = document.getElementById('category');
+            const priceFilter = document.getElementById('price');
+            const sizeFilter = document.getElementById('size');
+            const colorFilter = document.getElementById('color');
+            const searchInput = document.getElementById('searchInput');
+            
+            // Apply filters when any filter changes
+            [categoryFilter, priceFilter, sizeFilter, colorFilter].forEach(filter => {
+                if (filter) {
+                    filter.addEventListener('change', applyFilters);
+                }
+            });
+            
+            // Rest of your existing event listeners...
+        });
+
+        function applyFilters() {
+            const selectedCategory = document.getElementById('category').value;
+            const selectedPrice = document.getElementById('price').value;
+            const selectedSize = document.getElementById('size').value;
+            const selectedColor = document.getElementById('color').value;
+            const searchTerm = searchInput ? searchInput.value.trim().toLowerCase() : '';
+            
+            const productCards = document.querySelectorAll('.product-card');
+            let hasResults = false;
+            
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const price = parseInt(card.getAttribute('data-price'));
+                const sizes = card.getAttribute('data-sizes') ? card.getAttribute('data-sizes').split(',') : [];
+                const colors = card.getAttribute('data-colors') ? card.getAttribute('data-colors').split(',') : [];
+                const productName = card.querySelector('h4').textContent.toLowerCase();
+                const productDescription = card.querySelector('.description') ? 
+                    card.querySelector('.description').textContent.toLowerCase() : '';
+                
+                // Check category filter
+                const categoryMatch = selectedCategory === 'all' || category === selectedCategory;
+                
+                // Check price filter
+                let priceMatch = false;
+                if (selectedPrice === 'all') {
+                    priceMatch = true;
+                } else if (selectedPrice === '0-10000') {
+                    priceMatch = price <= 10000;
+                } else if (selectedPrice === '10000-20000') {
+                    priceMatch = price > 10000 && price <= 20000;
+                } else if (selectedPrice === '20000-50000') {
+                    priceMatch = price > 20000 && price <= 50000;
+                } else if (selectedPrice === '50000+') {
+                    priceMatch = price > 50000;
+                }
+                
+                // Check size filter
+                let sizeMatch = true;
+                if (selectedSize !== 'all' && sizes.length > 0) {
+                    sizeMatch = sizes.includes(selectedSize);
+                }
+                
+                // Check color filter
+                let colorMatch = true;
+                if (selectedColor !== 'all' && colors.length > 0) {
+                    colorMatch = colors.includes(selectedColor);
+                } else if (selectedColor !== 'all' && colors.length === 0) {
+                    // If product has no color data but color filter is applied
+                    colorMatch = false;
+                }
+                
+                // Check search term
+                let searchMatch = true;
+                if (searchTerm) {
+                    searchMatch = productName.includes(searchTerm) || 
+                                category.includes(searchTerm) || 
+                                (productDescription && productDescription.includes(searchTerm));
+                }
+                
+                if (categoryMatch && priceMatch && sizeMatch && colorMatch && searchMatch) {
+                    card.style.display = 'block';
+                    hasResults = true;
+                    
+                    if (searchTerm) {
+                        highlightText(card, searchTerm);
+                    } else {
+                        removeHighlights(card);
+                    }
+                } else {
+                    card.style.display = 'none';
+                    removeHighlights(card);
+                }
+            });
+            
+            document.querySelector('.no-results').style.display = hasResults ? 'none' : 'block';
+        }
+
+        // Rest of your existing functions (highlightText, removeHighlights, etc.)...
+        // // Initialize overlay functionality
+            // Get all overlay buttons and close buttons
+            const overlayBtns = document.querySelectorAll('.overlayBtn');
+            const closeBtns = document.querySelectorAll('.closeBtn');
+            
+            // Add click event to each overlay button
+            overlayBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Find the overlay div within the same product card
+                    const overlay = this.closest('.product-card').querySelector('.overlay');
+                    overlay.style.display = 'flex';
+                });
+            });
+            
+            // Add click event to each close button
+            closeBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Find the overlay div within the same product card
+                    const overlay = this.closest('.overlay');
+                    overlay.style.display = 'none';
+                });
+            });
+            
+    </script>-->
 </body>
 </html>
