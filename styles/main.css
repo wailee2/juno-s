@@ -955,7 +955,7 @@ footer {
         }
         
         .animate-up {
-            transform: translateY(150px);
+            transform: translateY(50px);
             transition: transform 0.8s ease-out, opacity 0.8s ease;
         }
         
