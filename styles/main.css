@@ -698,7 +698,6 @@ footer {
             }
             .card:hover img{
                 transform: scale(1.1);
-                box-shadonw: 0 5px 15px rgba(0, 0, 0, 0.2);
             }
             .card1{
                 border-radius: 0px 0px 160px 160px;
