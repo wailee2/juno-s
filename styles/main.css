@@ -83,6 +83,7 @@ header .container {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    transition: opacity 2.5s ease-in;
 }
 
 .logo {
